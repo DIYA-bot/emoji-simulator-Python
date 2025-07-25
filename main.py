@@ -5,6 +5,7 @@ pygame.init()
 screen=pygame.display.set_mode((1000,900))
 background=pygame.image.load('background.jpg')
 pygame.display.set_caption('Bounce Simulation')
+#creating class for simulated image
 class emoji:
     emoji_image=pygame.image.load('emoji.png')
     g=1
