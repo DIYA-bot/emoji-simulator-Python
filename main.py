@@ -22,7 +22,7 @@ class emoji:
         #changing position based on velocity
         self.X+=self.velocityX
         self.Y+=self.velocityY
-        #collission with the walls lead to change in velocity
+        #collision with the walls lead to change in velocity
         if self.X<0 or self.X>768:
             self.velocityX*=-1
         if self.Y<0 and self.velocityY<0:
@@ -32,8 +32,8 @@ class emoji:
             self.velocityY*=-1
             self.Y=568        
 #list of emojis created as objects
-emoji_List=[emoji(),emoji(),emoji()]
-#The main program loop
+emoji_List=[emoji(),emoji(),emoji(),emoji()]
+# main program 
 running=True
 while running:
     for event in pygame.event.get():
